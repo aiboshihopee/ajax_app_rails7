@@ -29,12 +29,10 @@ function post (){
       };
       const list = document.getElementById("list");
       const formText = document.getElementById("content");
-        //console.log(formText.value);
-    
       list.insertAdjacentHTML("afterend", buildHTML(XHR));
       formText.value = "";
     };
   });
- };
- 
- window.addEventListener('turbo:load', post);
+};
+
+window.addEventListener('turbo:load', post);
